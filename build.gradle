@@ -23,15 +23,15 @@ subprojects {
     dependencyManagement {
         dependencies {
             // SPRING
-            dependency "org.springframework.boot:spring-boot-starter:1.5.8.RELEASE"
-            dependency "org.springframework.boot:spring-boot-starter-web-services:1.5.8.RELEASE"
-            dependency "org.springframework.boot:spring-boot-starter-test:1.5.8.RELEASE"
+            dependency "org.springframework.boot:spring-boot-starter:2.0.2.RELEASE"
+            dependency "org.springframework.boot:spring-boot-starter-web-services:2.0.2.RELEASE"
+            dependency "org.springframework.boot:spring-boot-starter-test:2.0.2.RELEASE"
 
             // TEST
-            dependency "org.assertj:assertj-core:3.8.0"
+            dependency "org.assertj:assertj-core:3.10.0"
 
             // TEST RESTASSURED
-            dependency "com.jayway.restassured:rest-assured:2.9.0"
+            dependency "io.rest-assured:rest-assured:3.1.0"
             dependency "org.codehaus.groovy:groovy-all:2.4.10"
         }
     }

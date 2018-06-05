@@ -5,7 +5,7 @@ import org.assertj.core.api.Assertions;
 import org.junit.Test;
 
 import static be.switchfully.gameoflife.backend.status.StatusController.STATUS_BASE_URL;
-import static com.jayway.restassured.RestAssured.given;
+import static io.restassured.RestAssured.given;
 
 public class StatusControllerIntegrationTest extends IntegrationTest {
 

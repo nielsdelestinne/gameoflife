@@ -2,7 +2,7 @@ dependencies {
     compile "org.springframework.boot:spring-boot-starter-web-services"
     compile "org.codehaus.groovy:groovy-all"
 
-    testCompile ("com.jayway.restassured:rest-assured") {
+    testCompile ("io.rest-assured:rest-assured") {
         exclude group: "org.codehaus.groovy"
     }
     testCompile "org.springframework.boot:spring-boot-starter-test"

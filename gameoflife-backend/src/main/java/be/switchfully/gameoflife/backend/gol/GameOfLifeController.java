@@ -1,6 +1,7 @@
 package be.switchfully.gameoflife.backend.gol;
 
-import org.apache.log4j.Logger;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -14,11 +15,11 @@ import java.util.List;
 public class GameOfLifeController {
 
     static final String WORLD_BASE_URL = "/api/gol";
-    private static Logger logger = Logger.getLogger(GameOfLifeController.class);
+    private static Logger logger = LoggerFactory.getLogger(GameOfLifeController.class);
 
     @PostMapping(value = "/phase")
     public List<List<Boolean>> nextGeneration(@RequestBody List<List<Boolean>> currentWorld){
-        logger.info(currentWorld);
+        logger.info("current world: {}", currentWorld);
         Collections.shuffle(currentWorld);
         return currentWorld;
     }
